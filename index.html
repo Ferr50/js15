@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juros form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>Cadestre a Duplicata no Formulário Abaixo</h1>
+
+    <form>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" placeholder="Digite Seu Nome">
+        <label for="date">Data de Vencimento:</label>
+        <input type="date" id="date" name="date">
+        <label for="value">Valor da Compra:</label>
+        <input type="number" id="value" name="value" placeholder="Valor da Compra">
+        
+    </form> 
+    
+    <input id="input" type="submit" onclick="addDuplicate()" value="Submit">
+
+    <section id="boxDuplicates"></section>
+
+    <section>
+        <button id="btn" onclick="computeFees()">Calcular Juros</button>
+        <button id="btn2" onclick="sortName()">Agrupar por Nome</button>
+        <button id="btn3" onclick="sortDue()">Agrupar por Vencimento</button>
+        <input type="number" id="valueMin" name="valueMin" placeholder="valor minimo">
+        <button id="btn4" onclick="filterMinValue()">Filtrar Valor Minimo</button>
+        <input type="number" id="valueMax" name="valueMax" placeholder="valor maximo">
+        <button id="btn5" onclick="filterMaxValue()">Filtrar Valor Maximo</button>
+    </section>
+
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
